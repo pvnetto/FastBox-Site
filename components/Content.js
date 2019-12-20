@@ -2,7 +2,7 @@ import React from 'react';
 import style from 'styled-components';
 
 const StyledContent = style.div`
-    padding: 0rem 10rem;
+    padding: 0rem 14rem;
 `
 
 const Content = ({ children }) => {

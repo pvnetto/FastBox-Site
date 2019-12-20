@@ -55,6 +55,10 @@ const Reset = css`
         font-size: 3rem;
     }
 
+    h2 {
+        font-size: 2.5rem;
+    }
+
     a, p {
         font-size: 1.5rem;
     }

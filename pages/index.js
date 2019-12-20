@@ -14,9 +14,9 @@ const index = () => {
         <Layout>
             <Navbar />
             <Jumbotron />
-            {/* <About />
-                <Services />
-                <Partners />
+            <About />
+            <Services />
+            {/* <Partners />
                 <Gallery />
                 <Footer /> */}
         </Layout>

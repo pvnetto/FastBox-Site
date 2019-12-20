@@ -2,8 +2,8 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <section id="services">
-            <div id="services-info">
+        <section>
+            <div>
                 <h2>Serviços</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
@@ -13,24 +13,24 @@ const Services = () => {
                     in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
             </div>
 
-            <div id="service-box-container">
-                <div class="service-box">
-                    <img src="assets/oficina_pintura.jpg" alt="" />
-                    <a href="" class="primary-btn">
+            <div>
+                <div>
+                    <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
+                    <a href="">
                         Funilaria
                     </a>
                 </div>
 
-                <div class="service-box">
-                    <img src="assets/oficina_pintura.jpg" alt="" />
-                    <a href="" class="primary-btn">
+                <div>
+                    <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
+                    <a href="">
                         Pintura
                     </a>
                 </div>
 
-                <div class="service-box">
-                    <img src="assets/oficina_pintura.jpg" alt="" />
-                    <a href="" class="primary-btn">
+                <div>
+                    <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
+                    <a href="">
                         Polimento
                     </a>
                 </div>
