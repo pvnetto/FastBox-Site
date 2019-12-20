@@ -1,0 +1,30 @@
+{
+  "name": "fastbox",
+  "version": "1.0.0",
+  "description": "Website for FastBox Serviços Automotivos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "website",
+    "fastbox",
+    "oficina",
+    "javascript",
+    "react",
+    "next",
+    "html",
+    "css"
+  ],
+  "author": "Paiva",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.1.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1"
+  }
+}
