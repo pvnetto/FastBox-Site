@@ -9,13 +9,13 @@ const SectionHeaderStyle = style.h2`
     margin-bottom: 3rem;
 `
 
-const SectionHeader = ({ children }) => {
-    return (<SectionHeaderStyle>{children}</SectionHeaderStyle>)
-}
-
 const Section = ({ children }) => {
     return (<SectionStyle>{children}</SectionStyle>);
 };
+
+const SectionHeader = ({ children }) => {
+    return (<SectionHeaderStyle>{children}</SectionHeaderStyle>)
+}
 
 Section.Header = SectionHeader;
 

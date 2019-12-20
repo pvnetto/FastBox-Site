@@ -5,9 +5,9 @@ import Colors from '../helpers/colors';
 
 
 const StyledButton = styled.button`
-    color: ${primary => primary ? Colors.BLUE : Colors.YELLOW};
+    color: ${Colors.BLUE};
     background: transparent;
-    border: 2px solid ${primary => primary ? Colors.YELLOW : Colors.BLUE};
+    border: 2px solid ${Colors.YELLOW};
     border-radius: 2px;
     outline: none;
 

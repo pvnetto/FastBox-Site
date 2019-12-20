@@ -16,9 +16,9 @@ const index = () => {
             <Jumbotron />
             <About />
             <Services />
-            {/* <Partners />
-                <Gallery />
-                <Footer /> */}
+            <Partners />
+            {/* <Gallery /> */}
+            {/* <Footer /> */}
         </Layout>
     );
 };
