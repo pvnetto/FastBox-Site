@@ -6,13 +6,19 @@ import Container from '../../Container';
 import Content from '../../Content';
 
 const JumbotronStyle = style.header`
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-align: center;
-`
+
+    h1 {
+        margin-top: 5rem;
+        margin-bottom: 0.5rem;
+    }
+`;
 
 const JumbotronButtons = style.div`
     display: flex;
@@ -32,35 +38,53 @@ const JumbotronButtons = style.div`
         padding: 1.5rem 0;
         width: 100%;
     }
-`
+`;
 
+// Move to separate component
+const BackgroundBG = style.div`
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-image: url(${'./images/fastbox_dentro.jpg'});
+        background-size: cover;
+        filter: blur(2px) brightness(0.1);
+    }
+`
 
 const Jumbotron = () => {
     return (
         <Container variant={'secondary'}>
-            <Content>
-                <JumbotronStyle>
-                    <div>
+            <BackgroundBG>
+                <Content>
+                    <JumbotronStyle>
                         <div>
-                            <h1>
-                                Somos uma oficina de
+                            <div>
+                                <h1>
+                                    Somos uma oficina de
                                 <span> funilaria </span> e
                                 <span> pintura </span> com mais de 15 anos no mercado.
                             </h1>
-                            <p>Nosso foco é na qualidade e agilidade do serviço</p>
-                        </div>
+                                <p>Nosso foco é na qualidade e agilidade do serviço</p>
+                            </div>
 
-                        <JumbotronButtons>
-                            <a href="#about">
-                                <Button primary >Saiba mais</Button>
-                            </a>
-                            <a href="#services">
-                                <Button primary >Conheça nossos serviços</Button>
-                            </a>
-                        </JumbotronButtons>
-                    </div>
-                </ JumbotronStyle>
-            </Content>
+                            <JumbotronButtons>
+                                <a href="#about">
+                                    <Button primary >Saiba mais</Button>
+                                </a>
+                                <a href="#services">
+                                    <Button primary >Conheça nossos serviços</Button>
+                                </a>
+                            </JumbotronButtons>
+                        </div>
+                    </ JumbotronStyle>
+                </Content>
+            </BackgroundBG>
         </ Container>
     );
 };

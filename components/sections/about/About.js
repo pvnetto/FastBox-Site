@@ -21,7 +21,7 @@ const AboutContent = style.div`
 
 const About = () => {
     return (
-        <Container variant="tertiary">
+        <Container variant="secondary">
             <Content>
                 <Section>
 

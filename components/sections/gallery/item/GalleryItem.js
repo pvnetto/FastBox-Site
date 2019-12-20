@@ -1,6 +1,6 @@
 import React from 'react';
 import style from 'styled-components';
-import Button from '../../../buttons/Button';
+import Colors from '../../../helpers/colors';
 
 const GalleryItemStyle = style.div`
     flex: 1;
@@ -10,26 +10,41 @@ const GalleryItemStyle = style.div`
     align-items:center;
     justify-content: center;
 
-    margin: 0 1rem;
+    padding: 0.5rem;
+    margin: 0 0.3rem;
+`
+
+const GalleryItemImage = style.div`
+    display: flex;
+    flex-wrap: wrap;
+    align-items: column;
+    justify-content: center;
+
+    padding: 1rem;
+    margin-bottom: 0.3rem;
+    background: ${Colors.YELLOW};
 
     img {
         width: 100%;
-        margin-bottom: 0.2rem;
     }
 
-    button {
-        width: 100%;
-        padding: 1rem 0;
-        margin-top: 0.5rem;
+    p {
+        margin-bottom: 0.3rem;
     }
 `
+
 
 const GalleryItem = () => {
     return (
         <GalleryItemStyle>
-            <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
-            <img src="./images/fastbox_carro_banco.jpg" alt="" />
-            <Button>Veja o antes/depois!</Button>
+            <GalleryItemImage>
+                <p>Antes</p>
+                <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
+            </GalleryItemImage>
+            <GalleryItemImage>
+                <p>Depois</p>
+                <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
+            </GalleryItemImage>
         </GalleryItemStyle>
     );
 };

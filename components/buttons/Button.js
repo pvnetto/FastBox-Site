@@ -6,8 +6,8 @@ import Colors from '../helpers/colors';
 
 const StyledButton = styled.button`
     color: ${Colors.BLUE};
-    background: transparent;
-    border: 2px solid ${Colors.YELLOW};
+    background: ${Colors.YELLOW};
+    border: 3px solid ${Colors.YELLOW};
     border-radius: 2px;
     outline: none;
 
