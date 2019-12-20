@@ -51,8 +51,12 @@ const Reset = css`
         border-spacing: 0;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 900;
+    }
+
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     h2 {
