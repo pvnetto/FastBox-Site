@@ -15,10 +15,10 @@ const index = () => {
             <Navbar />
             <Jumbotron />
             {/* <About />
-            <Services />
-            <Partners />
-            <Gallery />
-            <Footer /> */}
+                <Services />
+                <Partners />
+                <Gallery />
+                <Footer /> */}
         </Layout>
     );
 };
