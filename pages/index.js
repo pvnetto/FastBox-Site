@@ -7,10 +7,11 @@ import Services from '../components/sections/services';
 import Partners from '../components/sections/partners';
 import Gallery from '../components/sections/gallery';
 import Footer from '../components/sections/footer';
+import Layout from '../components/Layout';
 
 const index = () => {
     return (
-        <div>
+        <Layout>
             <Navbar />
             <Jumbotron />
             {/* <About />
@@ -18,7 +19,7 @@ const index = () => {
             <Partners />
             <Gallery />
             <Footer /> */}
-        </div>
+        </Layout>
     );
 };
 

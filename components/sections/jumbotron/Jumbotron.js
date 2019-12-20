@@ -15,7 +15,7 @@ const Jumbotron = () => {
                         <p>Nosso foco é na qualidade e agilidade do serviço</p>
                     </div>
                     <a href="#about">
-                        <Button>Saiba mais</Button>
+                        <Button primary >Saiba mais</Button>
                     </a>
                 </div>
             </div>
