@@ -1,81 +1,37 @@
 import React from 'react';
+import style from 'styled-components';
+
+import GalleryItem from './item';
+import Container from '../../Container';
+import Content from '../../Content';
+import Section from '../../Section';
+
+const GalleryContent = style.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 -1rem;
+
+    width: 100%;
+`
 
 const Gallery = () => {
     return (
-        <section>
-            <div >
-                <h2>Galeria</h2>
+        <Container variant="primary">
+            <Content>
+                <Section>
+                    <Section.Header>Galeria</Section.Header>
 
-                <div >
-                    <div>
-                        <div>
-                            <div>Antes</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                        <div>
-                            <div>Depois</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="comp-container">
-                        <div class="comp-item">
-                            <div>Antes</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                        <div class="comp-item">
-                            <div>Depois</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="comp-container">
-                        <div class="comp-item">
-                            <div>Antes</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                        <div class="comp-item">
-                            <div>Depois</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="comp-container">
-                        <div class="comp-item">
-                            <div>Antes</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                        <div class="comp-item">
-                            <div>Depois</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="comp-container">
-                        <div class="comp-item">
-                            <div class="txt-content">Antes</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                        <div class="comp-item">
-                            <div class="txt-content">Depois</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="comp-container">
-                        <div class="comp-item">
-                            <div class="txt-content">Antes</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                        <div class="comp-item">
-                            <div class="txt-content">Depois</div>
-                            <img src="assets/oficina_pintura.jpg" alt="" />
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+                    <GalleryContent >
+                        <GalleryItem />
+                        <GalleryItem />
+                        <GalleryItem />
+                        <GalleryItem />
+                    </GalleryContent >
+                </Section>
+            </Content>
+        </Container>
     );
 };
 

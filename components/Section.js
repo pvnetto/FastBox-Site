@@ -3,6 +3,7 @@ import style from 'styled-components';
 
 const SectionStyle = style.section`
     padding: 6rem 0;
+    position: relative;
 `
 
 const SectionHeaderStyle = style.h2`

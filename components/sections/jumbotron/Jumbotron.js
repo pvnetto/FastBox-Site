@@ -19,7 +19,7 @@ const JumbotronButtons = style.div`
     align-items: center;
     justify-content: center;
 
-    margin: 1rem 0;
+    margin: 2rem 0;
 
     a {
         display: inline-block;

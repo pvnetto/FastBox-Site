@@ -8,6 +8,8 @@ const LayoutDiv = style.div`
 `
 
 const Reset = css`
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
     * {
         margin: 0;
         padding: 0;
@@ -15,6 +17,8 @@ const Reset = css`
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
+        
+        font-family: 'Roboto';
     }
 
     /* HTML5 display-role reset for older browsers */
@@ -52,15 +56,19 @@ const Reset = css`
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-weight: 900;
+        font-weight: 700;
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 
     a, p {

@@ -5,7 +5,13 @@ import Container from '../Container';
 import Content from '../Content';
 
 const NavbarStyle = style.nav`
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    background: white;
     border-bottom: 8px solid ${Colors.YELLOW};
+    opacity: 0.97;
 `
 
 const NavbarTop = style.div`
