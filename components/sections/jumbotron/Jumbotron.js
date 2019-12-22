@@ -4,6 +4,7 @@ import style from 'styled-components';
 import Button from '../../buttons/Button';
 import Container from '../../Container';
 import Content from '../../Content';
+import Colors from '../../helpers/colors';
 
 const JumbotronStyle = style.header`
     position: relative;
@@ -21,6 +22,10 @@ const JumbotronStyle = style.header`
     h1 {
         margin-top: 5rem;
         margin-bottom: 0.5rem;
+    }
+
+    span {
+        color: ${Colors.YELLOW};
     }
 
     @keyframes enter {
@@ -84,7 +89,7 @@ const Jumbotron = () => {
                                 <span> funilaria </span> e
                                 <span> pintura </span> com mais de 15 anos no mercado.
                             </h1>
-                                <p>Nosso foco é na qualidade e agilidade do serviço</p>
+                                <p>Nosso foco é na <span>qualidade</span> e <span>agilidade</span> do serviço</p>
                             </div>
 
                             <JumbotronButtons>

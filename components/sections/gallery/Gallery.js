@@ -2,9 +2,9 @@ import React from 'react';
 import style from 'styled-components';
 
 import GalleryItem from './item';
-import Container from '../../Container';
 import Content from '../../Content';
 import Section from '../../Section';
+import ParallaxContainer from '../../ParallaxContainer';
 
 const GalleryContent = style.div`
     display: flex;
@@ -18,7 +18,7 @@ const GalleryContent = style.div`
 
 const Gallery = () => {
     return (
-        <Container variant="primary">
+        <ParallaxContainer variant="primary">
             <Content>
                 <Section>
                     <Section.Header>Galeria</Section.Header>
@@ -31,7 +31,7 @@ const Gallery = () => {
                     </GalleryContent >
                 </Section>
             </Content>
-        </Container>
+        </ParallaxContainer>
     );
 };
 

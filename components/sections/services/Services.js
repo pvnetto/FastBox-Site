@@ -1,10 +1,10 @@
 import React from 'react';
 import style from 'styled-components';
 
-import Container from '../../Container';
 import Content from '../../Content';
 import Section from '../../Section';
 import Button from '../../buttons/Button';
+import ParallaxContainer from '../../ParallaxContainer';
 
 const ServicesContent = style.div`
     display: flex;
@@ -31,7 +31,7 @@ const ServiceItem = style.div`
 
 const Services = () => {
     return (
-        <Container>
+        <ParallaxContainer>
             <Content>
                 <Section>
 
@@ -62,7 +62,7 @@ const Services = () => {
 
                 </Section>
             </Content>
-        </Container>
+        </ ParallaxContainer>
     );
 };
 

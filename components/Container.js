@@ -28,7 +28,7 @@ const variantColor = ({ variant }) => {
     }
 }
 
-const StyledContainer = style.div`
+export const StyledContainer = style.div`
     width: 100%;
     background: ${(variant) => variantBG(variant)};
     color: ${(variant) => variantColor(variant)};
