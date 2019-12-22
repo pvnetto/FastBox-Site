@@ -32,8 +32,36 @@ const NavList = style.ul`
     }
 `
 
+const NavLink = style.a`
+    color: ${Colors.BLUE};
+
+    transition: all 0.3s ease;
+
+    padding: 0.3rem 0;
+
+    background-image: linear-gradient(to right, ${Colors.BLUE}, ${Colors.BLUE});
+    background-size: 0% 4px;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+
+    &:hover {
+        background-size: 100% 4px;
+    }
+`
+
 const MobileNav = style.div`
     display: none;
+`
+
+const NavContent = style.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+
+const NavLogo = style.img`
+    max-width: 200px;
+    height: auto;
 `
 
 const Navbar = () => {
@@ -48,25 +76,25 @@ const Navbar = () => {
             </Container>
 
             <Content>
-                <div>
+                <NavContent>
                     <a href="index.html">
-                        {/* <img id="logo" src="assets/logo-hires.png" alt="" /> */}
+                        <NavLogo src="./images/logo-hires.png" alt="" />
                     </a>
                     <NavList>
                         <li>
-                            <a href="#start-banner"><p>Início</p></a>
+                            <NavLink href="#start-banner">Início</NavLink>
                         </li>
                         <li>
-                            <a href="#about">Sobre</a>
+                            <NavLink href="#about">Sobre</NavLink>
                         </li>
                         <li>
-                            <a href="#services">Serviços</a>
+                            <NavLink href="#services">Serviços</NavLink>
                         </li>
                         <li>
-                            <a href="#gallery">Galeria</a>
+                            <NavLink href="#gallery">Galeria</NavLink>
                         </li>
                         <li>
-                            <a href="#contact">Contato</a>
+                            <NavLink href="#contact">Contato</NavLink>
                         </li>
                     </NavList>
 
@@ -83,7 +111,7 @@ const Navbar = () => {
                             <a href="#contact">Contato</a>
                         </div>
                     </MobileNav>
-                </div>
+                </NavContent>
             </Content>
         </NavbarStyle>
     );

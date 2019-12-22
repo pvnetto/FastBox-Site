@@ -11,10 +11,15 @@ const StyledButton = styled.button`
     border-radius: 2px;
     outline: none;
 
-    transition: all 0.2s ease;
+    opacity: 0.9;
+    cursor: pointer;
+
+
+    transition: all 0.3s ease;
 
     :hover {
-        background: ${primary => primary ? Colors.YELLOW : Colors.BLUE};
+        opacity: 1;
+        transform: scale(1.05);
     }
 `;
 

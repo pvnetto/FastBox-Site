@@ -13,10 +13,24 @@ const JumbotronStyle = style.header`
     justify-content: center;
 
     text-align: center;
+    transform: translateX(-2000px);
+
+    animation: enter 0.5s;
+    animation-fill-mode: forwards;
 
     h1 {
         margin-top: 5rem;
         margin-bottom: 0.5rem;
+    }
+
+    @keyframes enter {
+        0% {
+            transform: translateX(-2000px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
     }
 `;
 
