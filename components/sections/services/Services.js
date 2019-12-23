@@ -5,27 +5,58 @@ import Content from '../../layout/Content';
 import Section from '../../layout/Section';
 import ParallaxContainer from '../../layout/ParallaxContainer';
 import Button from '../../buttons/Button';
+import Colors from '../../helpers/colors';
+import { device } from '../../helpers/queries';
 
 const ServicesContent = style.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     margin: -1rem;
 `
 
-const ServiceItem = style.div`
-    flex: 1;
+const ServiceCard = style.div`
+    flex: 1 1 100%;
     margin: 3rem 1rem 1rem 1rem;
 
-    img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    border: 2px solid ${Colors.BLUE};
+
+    padding: 1rem;
+
+    & > * {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+    }
+
+    a, button, img {
         width: 100%;
     }
 
     button {
-        margin-top: 1rem;
         padding: 2rem 0;
-        width: 100%;
+    }
+
+    @media ${device.tablet} {
+        flex: 1 1 40%;
+        max-width: 40%;
+        min-width: 40%;
+    }
+    
+    @media ${device.laptop} {
+        flex: 1;
+        max-width: unset;
+        min-width: 0;
     }
 `
 
@@ -44,20 +75,33 @@ const Services = () => {
                         in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 
                     <ServicesContent>
-                        <ServiceItem>
+                        <ServiceCard>
                             <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
-                            <a href=""><Button primary>Funilaria</Button></a>
-                        </ServiceItem>
+                            <h3>Funilaria</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
+                            metus. Quisque vestibulum iaculis mi vel rutrum. Curabitur aliquam tellus nec lacus tempus, sed semper
+                                nunc tempor. Sed at lacus sed risus sollicitudin pulvinar sit amet at dolor.</p>
+                            <a href=""><Button primary>Solicite um orçamento!</Button></a>
+                        </ServiceCard>
 
-                        <ServiceItem>
+                        <ServiceCard>
                             <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
-                            <a href=""><Button primary>Pintura</Button></a>
-                        </ServiceItem>
+                            <h3>Pintura</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
+                            metus. Quisque vestibulum iaculis mi vel rutrum. Curabitur aliquam tellus nec lacus tempus, sed semper
+                                nunc tempor. Sed at lacus sed risus sollicitudin pulvinar sit amet at dolor.</p>
+                            <a href=""><Button primary>Solicite um orçamento!</Button></a>
+                        </ServiceCard>
 
-                        <ServiceItem>
+                        <ServiceCard>
                             <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
-                            <a href=""><Button primary>Polimento</Button></a>
-                        </ServiceItem>
+                            <h3>Polimento</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
+                            metus. Quisque vestibulum iaculis mi vel rutrum. Curabitur aliquam tellus nec lacus tempus, sed semper
+                                nunc tempor. Sed at lacus sed risus sollicitudin pulvinar sit amet at dolor.</p>
+                            <a href=""><Button primary>Solicite um orçamento!</Button></a>
+                        </ServiceCard>
+
                     </ServicesContent>
 
                 </Section>

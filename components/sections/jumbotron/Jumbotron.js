@@ -95,9 +95,9 @@ const Jumbotron = () => {
                             <div>
                                 <h1>
                                     Somos uma oficina de
-                                <span> funilaria </span> e
-                                <span> pintura </span> com mais de 15 anos no mercado.
-                            </h1>
+                                    <span> funilaria </span> e
+                                    <span> pintura </span> com mais de 15 anos no mercado.
+                                </h1>
                                 <p>Nosso foco é na <span>qualidade</span> e <span>agilidade</span> do serviço</p>
                             </div>
 
