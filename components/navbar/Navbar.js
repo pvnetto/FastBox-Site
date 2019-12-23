@@ -3,15 +3,22 @@ import style from 'styled-components';
 import Colors from '../helpers/colors';
 import Container from '../layout/Container';
 import Content from '../layout/Content';
+import MobileNavbar from './MobileNavbar';
+import { device } from '../helpers/queries';
 
 const NavbarStyle = style.nav`
+    display: none;
     position: fixed;
     width: 100%;
     z-index: 100;
 
     background: white;
-    border-bottom: 8px solid ${Colors.YELLOW};
     opacity: 0.97;
+    border-bottom: 8px solid ${Colors.YELLOW};
+
+    @media ${device.laptop} {
+        display: block;
+    }
 `
 
 const NavbarTop = style.div`
@@ -49,10 +56,6 @@ const NavLink = style.a`
     }
 `
 
-const MobileNav = style.div`
-    display: none;
-`
-
 const NavContent = style.div`
     display: flex;
     align-items: center;
@@ -66,54 +69,43 @@ const NavLogo = style.img`
 
 const Navbar = () => {
     return (
-        <NavbarStyle>
-            <Container variant={'secondary'}>
+        <>
+            <MobileNavbar />
+            <NavbarStyle>
+                <Container variant={'secondary'}>
+                    <Content>
+                        <NavbarTop>
+                            <small>Fale conosco: (84) 3613-2707</small>
+                        </NavbarTop>
+                    </Content>
+                </Container>
+
                 <Content>
-                    <NavbarTop>
-                        <small>Fale conosco: (84) 3613-2707</small>
-                    </NavbarTop>
-                </Content>
-            </Container>
-
-            <Content>
-                <NavContent>
-                    <a href="/">
-                        <NavLogo src="./images/logo-hires.png" alt="" />
-                    </a>
-                    <NavList>
-                        <li>
-                            <NavLink href="#start-banner">Início</NavLink>
-                        </li>
-                        <li>
-                            <NavLink href="#about">Sobre</NavLink>
-                        </li>
-                        <li>
-                            <NavLink href="#services">Serviços</NavLink>
-                        </li>
-                        <li>
-                            <NavLink href="#gallery">Galeria</NavLink>
-                        </li>
-                        <li>
-                            <NavLink href="#contact">Contato</NavLink>
-                        </li>
-                    </NavList>
-
-                    <MobileNav>
+                    <NavContent>
                         <a href="/">
-                            {/* <img src="assets/menu_icon.png" alt="" /> */}
+                            <NavLogo src="./images/logo-hires.png" alt="" />
                         </a>
-                        <div>
-                            {/* <img src="assets/close_btn.png" alt="" /> */}
-                            <a href="#start-banner">Início</a>
-                            <a href="#about">Sobre</a>
-                            <a href="#services">Serviços</a>
-                            <a href="#gallery">Galeria</a>
-                            <a href="#contact">Contato</a>
-                        </div>
-                    </MobileNav>
-                </NavContent>
-            </Content>
-        </NavbarStyle>
+                        <NavList>
+                            <li>
+                                <NavLink href="#start-banner">Início</NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="#about">Sobre</NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="#services">Serviços</NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="#gallery">Galeria</NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="#contact">Contato</NavLink>
+                            </li>
+                        </NavList>
+                    </NavContent>
+                </Content>
+            </NavbarStyle>
+        </>
     );
 };
 

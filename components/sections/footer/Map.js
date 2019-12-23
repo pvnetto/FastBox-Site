@@ -4,7 +4,7 @@ import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api'
 const Map = () => {
 
     const { isLoaded, loadError } = useLoadScript({
-        googleMapsApiKey: "AIzaSyBNbNit47OnRXUkMomHp0kaGWy_WUc20X8"
+        googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY
     })
 
     const fastBoxCoords = { lat: -5.81116653, lng: -35.21086514 };
