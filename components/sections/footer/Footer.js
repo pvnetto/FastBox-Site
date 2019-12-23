@@ -5,6 +5,7 @@ import Container from '../../layout/Container';
 import Content from '../../layout/Content';
 import Section from '../../layout/Section';
 import Map from './Map';
+import { device } from '../../helpers/queries';
 
 const FooterContent = style.div`
     display: flex;
@@ -18,13 +19,20 @@ const ContactContainer = style.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
+    flex-wrap: wrap;
 `
 
 const ContactItem = style.div`
-    margin-right: 3rem;
+    margin-bottom: 1rem;
+    width: 100%;
 
     p {
         margin: 0.7rem 0;
+    }
+
+    @media ${device.tablet} {
+        max-width: 50%;
     }
 `
 

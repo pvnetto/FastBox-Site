@@ -1,6 +1,7 @@
 import React from 'react';
 import style from 'styled-components';
 import Colors from '../../../helpers/colors';
+import { device } from '../../../helpers/queries';
 
 const GalleryItemStyle = style.div`
     flex: 1;
@@ -12,6 +13,15 @@ const GalleryItemStyle = style.div`
 
     padding: 0.5rem;
     margin: 0 0.3rem;
+    min-width: 100%;
+
+    @media ${device.tablet} {
+        min-width: 30%;
+    }
+
+    @media ${device.laptop} {
+        min-width: 0;
+    }
 `
 
 const GalleryItemImage = style.div`
@@ -21,7 +31,6 @@ const GalleryItemImage = style.div`
     justify-content: center;
 
     padding: 1rem;
-    margin-bottom: 0.3rem;
     background: ${Colors.YELLOW};
 
     cursor: pointer;

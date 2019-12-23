@@ -11,7 +11,7 @@ const StyledContent = style.div`
     }
 
     @media ${device.laptop} {
-        padding: 0rem 8rem;
+        padding: 0rem 6.5rem;
     }
 
     @media ${device.laptopL} {

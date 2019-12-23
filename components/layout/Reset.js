@@ -1,6 +1,7 @@
 // @see https://github.com/zacanger/styled-reset
 import React from 'react';
 import style, { createGlobalStyle, css } from 'styled-components';
+import { device } from '../helpers/queries';
 
 const ResetStyle = css`
     @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -29,6 +30,7 @@ const ResetStyle = css`
 
     body {
         line-height: 1;
+        overflow-x: hidden;
     }
 
     ol, ul {
@@ -54,28 +56,50 @@ const ResetStyle = css`
         font-weight: 700;
     }
 
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    a, p {
-        font-size: 1.5rem;
-    }
-
     a {
         text-decoration: none;
     }
 
-    small {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    a, p {
         font-size: 1rem;
+    }
+
+    small {
+        font-size: 0.8rem;
+    }
+
+    @media ${device.tablet} {
+        h1 {
+            font-size: 4rem;
+        }
+    
+        h2 {
+            font-size: 3rem;
+        }
+    
+        h3 {
+            font-size: 2rem;
+        }
+    
+        a, p {
+            font-size: 1.5rem;
+        }
+
+        small {
+            font-size: 1rem;
+        }
     }
 `
 

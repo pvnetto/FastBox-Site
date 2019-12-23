@@ -11,9 +11,10 @@ const StyledButton = styled.button`
     border-radius: 2px;
     outline: none;
 
+    font-weight: 600;
+
     opacity: 0.9;
     cursor: pointer;
-
 
     transition: all 0.3s ease;
 

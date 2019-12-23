@@ -5,6 +5,7 @@ import Button from '../../buttons/Button';
 import Container from '../../layout/Container';
 import Content from '../../layout/Content';
 import Colors from '../../helpers/colors';
+import { device } from '../../helpers/queries';
 
 const JumbotronStyle = style.header`
     position: relative;
@@ -43,19 +44,27 @@ const JumbotronButtons = style.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
     margin: 2rem 0;
 
     a {
         display: inline-block;
-        width: 300px;
+        width: 100%;
 
-        margin: 0 2rem;
+        margin: 0.3rem 0;
     }
 
     button {
         padding: 1.5rem 0;
         width: 100%;
+    }
+
+    @media ${device.tablet} {
+        a {
+            width: 300px;
+            margin: 0 1rem;
+        }
     }
 `;
 

@@ -4,18 +4,36 @@ import style from 'styled-components';
 import Container from '../../layout/Container';
 import Content from '../../layout/Content';
 import Section from '../../layout/Section';
+import { device } from '../../helpers/queries';
 
 const AboutContent = style.div`
     display: flex;
+    flex-direction: column-reverse;
     align-items: flex-start;
     justify-content: space-between;
-
-    p {
-        max-width: 60%;
-    }
+    flex-wrap: wrap;
 
     img {
-        max-width: 30%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    @media ${device.laptop} {
+        flex-direction: row;
+
+        img {
+            max-width: 40%;
+        }
+
+        p {
+            max-width: 50%;
+        }
+    }
+
+    @media ${device.laptopL} {
+        img {
+            max-width: 30%;
+        }
     }
 `
 

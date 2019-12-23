@@ -5,20 +5,26 @@ import Content from '../../layout/Content';
 import Section from '../../layout/Section';
 import ParallaxContainer from '../../layout/ParallaxContainer';
 import { RGBColors } from '../../helpers/colors';
+import { device } from '../../helpers/queries';
 
 const PartnersContent = style.div`
     display: flex;
     align-items:center;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 -2rem;
 `
 
 const PartnerItem = style.div`
-    flex: 1;
-    margin: 0 2rem;
+    flex: 1 1 30%;
+    margin: 2rem;
     
     img {
         width: 100%;
+    }
+
+    @media ${device.tablet} {
+        flex: 1;
     }
 `
 

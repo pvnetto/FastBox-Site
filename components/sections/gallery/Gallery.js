@@ -12,6 +12,7 @@ const GalleryContent = style.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     margin: 0 -1rem;
 
