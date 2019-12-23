@@ -7,12 +7,12 @@ import Services from '../components/sections/services';
 import Partners from '../components/sections/partners';
 import Gallery from '../components/sections/gallery';
 import Footer from '../components/sections/footer';
-import Layout from '../components/Layout';
+import Reset from '../components/layout/Reset';
 import FooterNote from '../components/sections/footer/FooterNote';
 
 const index = () => {
     return (
-        <Layout>
+        <Reset>
             <Navbar />
             <Jumbotron />
             <About />
@@ -21,7 +21,7 @@ const index = () => {
             <Gallery />
             <Footer />
             <FooterNote />
-        </Layout>
+        </Reset>
     );
 };
 

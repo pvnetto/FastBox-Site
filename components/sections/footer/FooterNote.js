@@ -1,8 +1,8 @@
 import React from 'react';
 import style from 'styled-components';
 
-import Container from '../../Container';
-import Content from '../../Content';
+import Container from '../../layout/Container';
+import Content from '../../layout/Content';
 
 const FooterNoteText = style.small`
     display: inline-block;

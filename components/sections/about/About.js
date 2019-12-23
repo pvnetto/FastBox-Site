@@ -1,9 +1,9 @@
 import React from 'react';
 import style from 'styled-components';
 
-import Container from '../../Container';
-import Content from '../../Content';
-import Section from '../../Section';
+import Container from '../../layout/Container';
+import Content from '../../layout/Content';
+import Section from '../../layout/Section';
 
 const AboutContent = style.div`
     display: flex;

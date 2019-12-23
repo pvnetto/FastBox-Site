@@ -1,11 +1,10 @@
 import React from 'react';
 import style from 'styled-components';
 
-import Content from '../../Content';
-import Section from '../../Section';
-import ParallaxContainer from '../../ParallaxContainer';
-import Container from '../../Container';
-import Colors, { RGBColors } from '../../helpers/colors';
+import Content from '../../layout/Content';
+import Section from '../../layout/Section';
+import ParallaxContainer from '../../layout/ParallaxContainer';
+import { RGBColors } from '../../helpers/colors';
 
 const PartnersContent = style.div`
     display: flex;

@@ -1,6 +1,6 @@
 import React from 'react';
 import style from 'styled-components';
-import Colors from './helpers/colors';
+import Colors from '../helpers/colors';
 
 const variantBG = ({ variant }) => {
     switch (variant) {

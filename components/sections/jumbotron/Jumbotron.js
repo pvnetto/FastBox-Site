@@ -2,8 +2,8 @@ import React from 'react';
 import style from 'styled-components';
 
 import Button from '../../buttons/Button';
-import Container from '../../Container';
-import Content from '../../Content';
+import Container from '../../layout/Container';
+import Content from '../../layout/Content';
 import Colors from '../../helpers/colors';
 
 const JumbotronStyle = style.header`
@@ -48,7 +48,7 @@ const JumbotronButtons = style.div`
 
     a {
         display: inline-block;
-        width: 25%;
+        width: 300px;
 
         margin: 0 2rem;
     }

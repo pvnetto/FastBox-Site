@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import style from 'styled-components';
 
 import GalleryItem from './item';
-import Content from '../../Content';
-import Section from '../../Section';
-import ParallaxContainer from '../../ParallaxContainer';
+import Content from '../../layout/Content';
+import Section from '../../layout/Section';
+import ParallaxContainer from '../../layout/ParallaxContainer';
 
 import Modal from './modal/Modal';
 

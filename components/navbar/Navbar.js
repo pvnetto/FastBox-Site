@@ -1,8 +1,8 @@
 import React from 'react';
 import style from 'styled-components';
 import Colors from '../helpers/colors';
-import Container from '../Container';
-import Content from '../Content';
+import Container from '../layout/Container';
+import Content from '../layout/Content';
 
 const NavbarStyle = style.nav`
     position: fixed;
@@ -77,7 +77,7 @@ const Navbar = () => {
 
             <Content>
                 <NavContent>
-                    <a href="index.html">
+                    <a href="/">
                         <NavLogo src="./images/logo-hires.png" alt="" />
                     </a>
                     <NavList>

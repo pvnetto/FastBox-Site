@@ -2,12 +2,7 @@
 import React from 'react';
 import style, { createGlobalStyle, css } from 'styled-components';
 
-
-const LayoutDiv = style.div`
-    background: white;
-`
-
-const Reset = css`
+const ResetStyle = css`
     @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
     * {
@@ -84,15 +79,15 @@ const Reset = css`
     }
 `
 
-const GlobalStyle = createGlobalStyle`${Reset}`;
+const GlobalStyle = createGlobalStyle`${ResetStyle}`;
 
-const Layout = ({ children }) => {
+const Reset = ({ children }) => {
     return (
-        <LayoutDiv>
+        <div>
             <GlobalStyle />
             {children}
-        </LayoutDiv>
+        </div>
     )
 };
 
-export default Layout;
+export default Reset;

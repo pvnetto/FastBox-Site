@@ -1,10 +1,10 @@
 import React from 'react';
 import style from 'styled-components';
 
-import Content from '../../Content';
-import Section from '../../Section';
+import Content from '../../layout/Content';
+import Section from '../../layout/Section';
+import ParallaxContainer from '../../layout/ParallaxContainer';
 import Button from '../../buttons/Button';
-import ParallaxContainer from '../../ParallaxContainer';
 
 const ServicesContent = style.div`
     display: flex;

@@ -10,7 +10,7 @@ const Map = () => {
     const fastBoxCoords = { lat: -5.81116653, lng: -35.21086514 };
 
 
-    return isLoaded ? <GoogleMap zoom={16} center={fastBoxCoords} mapContainerStyle={{ width: '100%', maxWidth: '500px', height: '250px' }}>
+    return isLoaded ? <GoogleMap zoom={16} center={fastBoxCoords} mapContainerStyle={{ width: '100%', height: '400px', margin: '3rem 0' }}>
         <Marker position={fastBoxCoords} title={"Oficina FastBox"} />
     </GoogleMap> : null;
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 import style from 'styled-components';
 
-import Container from '../../Container';
-import Content from '../../Content';
-import Section from '../../Section';
+import Container from '../../layout/Container';
+import Content from '../../layout/Content';
+import Section from '../../layout/Section';
 import Map from './Map';
 
 const FooterContent = style.div`
@@ -11,6 +11,7 @@ const FooterContent = style.div`
 
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 `
 
 const ContactContainer = style.div`
@@ -33,6 +34,7 @@ const Footer = () => {
             <Content>
                 <Section>
                     <FooterContent>
+
                         <ContactContainer>
                             <ContactItem>
                                 <h3>Contato</h3>
