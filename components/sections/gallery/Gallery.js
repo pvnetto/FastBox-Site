@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from 'styled-components';
 
 import GalleryItem from './item';
 import Content from '../../Content';
 import Section from '../../Section';
 import ParallaxContainer from '../../ParallaxContainer';
+
+import Modal from './modal/Modal';
 
 const GalleryContent = style.div`
     display: flex;
@@ -17,6 +19,15 @@ const GalleryContent = style.div`
 `
 
 const Gallery = () => {
+
+    const [showModal, setShowModal] = useState(false);
+    const [modalData, setModalData] = useState({});
+
+    const openModal = (data) => {
+        setShowModal(true);
+        setModalData(data);
+    }
+
     return (
         <ParallaxContainer variant="primary">
             <Content>
@@ -24,11 +35,13 @@ const Gallery = () => {
                     <Section.Header>Galeria</Section.Header>
 
                     <GalleryContent >
-                        <GalleryItem />
-                        <GalleryItem />
-                        <GalleryItem />
-                        <GalleryItem />
+                        <GalleryItem onClick={openModal} />
+                        <GalleryItem onClick={openModal} />
+                        <GalleryItem onClick={openModal} />
+                        <GalleryItem onClick={openModal} />
                     </GalleryContent >
+
+                    <Modal show={showModal} handleClose={() => setShowModal(false)} data={modalData} />
                 </Section>
             </Content>
         </ParallaxContainer>

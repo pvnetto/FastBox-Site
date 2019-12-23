@@ -24,6 +24,8 @@ const GalleryItemImage = style.div`
     margin-bottom: 0.3rem;
     background: ${Colors.YELLOW};
 
+    cursor: pointer;
+
     img {
         width: 100%;
     }
@@ -34,14 +36,14 @@ const GalleryItemImage = style.div`
 `
 
 
-const GalleryItem = () => {
+const GalleryItem = ({ onClick }) => {
     return (
         <GalleryItemStyle>
-            <GalleryItemImage>
+            <GalleryItemImage onClick={() => onClick({ text: "Antes", image: "./images/fastbox_pintura_estufa.jpg" })}>
                 <p>Antes</p>
                 <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
             </GalleryItemImage>
-            <GalleryItemImage>
+            <GalleryItemImage onClick={() => onClick({ text: "Depois", image: "./images/fastbox_pintura_estufa.jpg" })}>
                 <p>Depois</p>
                 <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
             </GalleryItemImage>
