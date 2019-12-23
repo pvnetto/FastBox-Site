@@ -4,10 +4,7 @@ import style from 'styled-components';
 import Container from '../../Container';
 import Content from '../../Content';
 import Section from '../../Section';
-
-const FooterStyle = style.footer`
-    padding-top: 2rem;
-`
+import Map from './Map';
 
 const FooterContent = style.div`
     display: flex;
@@ -53,7 +50,7 @@ const Footer = () => {
                             </ContactItem>
                         </ContactContainer>
 
-                        <div></div>
+                        <Map />
                     </FooterContent>
                 </Section>
             </Content>
