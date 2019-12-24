@@ -40,7 +40,7 @@ const AboutContent = style.div`
 
 const About = () => {
     return (
-        <Container variant="secondary">
+        <Container id="sobre" variant="secondary">
             <Content>
                 <Section>
 

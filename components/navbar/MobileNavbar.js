@@ -96,11 +96,11 @@ const MobileNavbar = () => {
             </MobileNavIcon>
             <MobileNavStyle active={isMenuOpen}>
                 <MobileNavButtons>
-                    <a onClick={() => setMenuOpen(false)} href="#start-banner">Início</a>
-                    <a onClick={() => setMenuOpen(false)} href="#about">Sobre</a>
-                    <a onClick={() => setMenuOpen(false)} href="#services">Serviços</a>
-                    <a onClick={() => setMenuOpen(false)} href="#gallery">Galeria</a>
-                    <a onClick={() => setMenuOpen(false)} href="#contact">Contato</a>
+                    <a onClick={() => setMenuOpen(false)} href="#inicio">Início</a>
+                    <a onClick={() => setMenuOpen(false)} href="#sobre">Sobre</a>
+                    <a onClick={() => setMenuOpen(false)} href="#servicos">Serviços</a>
+                    <a onClick={() => setMenuOpen(false)} href="#galeria">Galeria</a>
+                    <a onClick={() => setMenuOpen(false)} href="#contato">Contato</a>
                 </MobileNavButtons>
             </MobileNavStyle>
         </>

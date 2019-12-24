@@ -34,7 +34,7 @@ const Gallery = () => {
     }
 
     return (
-        <ParallaxContainer variant="primary">
+        <ParallaxContainer id="galeria" variant="primary">
             <Content>
                 <Section>
                     <Section.Header>Galeria</Section.Header>

@@ -34,7 +34,7 @@ const PartnersOverlay = style.div`
 
 const Partners = () => {
     return (
-        <ParallaxContainer image='./images/partners_handshake_bg.jpg' variant="secondary">
+        <ParallaxContainer id="parceiros" image='./images/partners_handshake_bg.jpg' variant="secondary">
             <PartnersOverlay>
                 <Content>
                     <Section>

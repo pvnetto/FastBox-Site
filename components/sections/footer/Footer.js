@@ -38,7 +38,7 @@ const ContactItem = style.div`
 
 const Footer = () => {
     return (
-        <Container variant="tertiary" >
+        <Container id="contato" variant="tertiary" >
             <Content>
                 <Section>
                     <FooterContent>

@@ -87,19 +87,19 @@ const Navbar = () => {
                         </a>
                         <NavList>
                             <li>
-                                <NavLink href="#start-banner">Início</NavLink>
+                                <NavLink href="#inicio">Início</NavLink>
                             </li>
                             <li>
-                                <NavLink href="#about">Sobre</NavLink>
+                                <NavLink href="#sobre">Sobre</NavLink>
                             </li>
                             <li>
-                                <NavLink href="#services">Serviços</NavLink>
+                                <NavLink href="#servicos">Serviços</NavLink>
                             </li>
                             <li>
-                                <NavLink href="#gallery">Galeria</NavLink>
+                                <NavLink href="#galeria">Galeria</NavLink>
                             </li>
                             <li>
-                                <NavLink href="#contact">Contato</NavLink>
+                                <NavLink href="#contato">Contato</NavLink>
                             </li>
                         </NavList>
                     </NavContent>

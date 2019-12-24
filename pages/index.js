@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 import Navbar from '../components/navbar';
 import Jumbotron from '../components/sections/jumbotron';
@@ -13,6 +14,11 @@ import FooterNote from '../components/sections/footer/FooterNote';
 const index = () => {
     return (
         <Reset>
+            <Head>
+                <title>FastBox Serviços Automotivos</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
+
             <Navbar />
             <Jumbotron />
             <About />

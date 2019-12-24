@@ -87,7 +87,7 @@ const BackgroundBG = style.div`
 
 const Jumbotron = () => {
     return (
-        <Container variant={'secondary'}>
+        <Container id="inicio" variant={'secondary'}>
             <BackgroundBG>
                 <Content>
                     <JumbotronStyle>
