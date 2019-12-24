@@ -2,6 +2,7 @@ import React from 'react';
 import style from 'styled-components';
 
 import Colors from '../../../helpers/colors';
+import { device } from '../../../helpers/queries';
 
 const ModalContainer = style.div`
     position: fixed;
@@ -13,11 +14,15 @@ const ModalContainer = style.div`
     height: 100%;
     overflow: auto;
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
     background-color: rgba(0, 0, 0, 0.4);
+
+    @media ${device.tablet} {
+        display: flex;
+    }
 `
 
 const ModalContent = style.div`

@@ -1,5 +1,6 @@
 import React from 'react';
 import style from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 import Content from '../../layout/Content';
 import Section from '../../layout/Section';
@@ -74,35 +75,36 @@ const Services = () => {
                         in accumsan. Ut quis feugiat dolor. In posuere congue metus non dapibus. Vestibulum ante ipsum primis
                         in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 
-                    <ServicesContent>
-                        <ServiceCard>
-                            <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
-                            <h3>Funilaria</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
-                            metus. Quisque vestibulum iaculis mi vel rutrum. Curabitur aliquam tellus nec lacus tempus, sed semper
+                    <Fade left ssrFadeout>
+                        <ServicesContent>
+                            <ServiceCard>
+                                <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
+                                <h3>Funilaria</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
+                                metus. Quisque vestibulum iaculis mi vel rutrum. Curabitur aliquam tellus nec lacus tempus, sed semper
                                 nunc tempor. Sed at lacus sed risus sollicitudin pulvinar sit amet at dolor.</p>
-                            <a href=""><Button primary>Solicite um orçamento!</Button></a>
-                        </ServiceCard>
+                                <a href=""><Button primary>Solicite um orçamento!</Button></a>
+                            </ServiceCard>
 
-                        <ServiceCard>
-                            <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
-                            <h3>Pintura</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
-                            metus. Quisque vestibulum iaculis mi vel rutrum. Curabitur aliquam tellus nec lacus tempus, sed semper
+                            <ServiceCard>
+                                <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
+                                <h3>Pintura</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
+                                metus. Quisque vestibulum iaculis mi vel rutrum. Curabitur aliquam tellus nec lacus tempus, sed semper
                                 nunc tempor. Sed at lacus sed risus sollicitudin pulvinar sit amet at dolor.</p>
-                            <a href=""><Button primary>Solicite um orçamento!</Button></a>
-                        </ServiceCard>
+                                <a href=""><Button primary>Solicite um orçamento!</Button></a>
+                            </ServiceCard>
 
-                        <ServiceCard>
-                            <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
-                            <h3>Polimento</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
-                            metus. Quisque vestibulum iaculis mi vel rutrum. Curabitur aliquam tellus nec lacus tempus, sed semper
+                            <ServiceCard>
+                                <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
+                                <h3>Polimento</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ornare lacinia. Morbi vitae finibus
+                                metus. Quisque vestibulum iaculis mi vel rutrum. Curabitur aliquam tellus nec lacus tempus, sed semper
                                 nunc tempor. Sed at lacus sed risus sollicitudin pulvinar sit amet at dolor.</p>
-                            <a href=""><Button primary>Solicite um orçamento!</Button></a>
-                        </ServiceCard>
-
-                    </ServicesContent>
+                                <a href=""><Button primary>Solicite um orçamento!</Button></a>
+                            </ServiceCard>
+                        </ServicesContent>
+                    </Fade>
 
                 </Section>
             </Content>

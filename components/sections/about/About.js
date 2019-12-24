@@ -1,5 +1,6 @@
 import React from 'react';
 import style from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 import Container from '../../layout/Container';
 import Content from '../../layout/Content';
@@ -50,7 +51,9 @@ const About = () => {
                             sed semper nunc tempor. Sed at lacus sed risus sollicitudin pulvinar sit amet at dolor. Nullam congue
                             finibus ante in accumsan. Ut quis feugiat dolor. In posuere congue metus non dapibus. Vestibulum
                                 ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                        <img src="./images/fastbox_carro_banco.jpg" alt="" />
+                        <Fade right ssrFadeout>
+                            <img src="./images/fastbox_carro_banco.jpg" alt="" />
+                        </Fade>
                     </AboutContent>
 
                 </Section>
