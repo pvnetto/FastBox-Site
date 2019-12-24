@@ -4,7 +4,7 @@ import Colors from '../../../helpers/colors';
 import { device } from '../../../helpers/queries';
 
 const GalleryItemStyle = style.div`
-    flex: 1;
+    flex: 1 1 30%;
 
     display: flex;
     flex-direction: column;
@@ -12,23 +12,23 @@ const GalleryItemStyle = style.div`
     justify-content: center;
 
     padding: 0.5rem;
-    margin: 0 0.3rem;
-    min-width: 100%;
+    margin: 0.5rem;
 
     @media ${device.tablet} {
-        min-width: 30%;
+        flex: 1 1 30%;
     }
 
-    @media ${device.laptop} {
-        min-width: 0;
+    @media ${device.laptopL} {
+        flex: 1;
     }
 `
 
-const GalleryItemImage = style.div`
+const GalleryItemContent = style.div`
     display: flex;
     flex-wrap: wrap;
     align-items: column;
     justify-content: center;
+    height: 50%;
 
     padding: 1rem;
     background: ${Colors.YELLOW};
@@ -37,6 +37,8 @@ const GalleryItemImage = style.div`
 
     img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     p {
@@ -48,14 +50,14 @@ const GalleryItemImage = style.div`
 const GalleryItem = ({ onClick }) => {
     return (
         <GalleryItemStyle>
-            <GalleryItemImage onClick={() => onClick({ text: "Antes", image: "./images/fastbox_pintura_estufa.jpg" })}>
+            <GalleryItemContent onClick={() => onClick({ text: "Antes", image: "./images/fastbox_pintura_estufa.jpg" })}>
                 <p>Antes</p>
                 <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
-            </GalleryItemImage>
-            <GalleryItemImage onClick={() => onClick({ text: "Depois", image: "./images/fastbox_pintura_estufa.jpg" })}>
+            </GalleryItemContent>
+            <GalleryItemContent onClick={() => onClick({ text: "Depois", image: "./images/fastbox_pintura_estufa.jpg" })}>
                 <p>Depois</p>
                 <img src="./images/fastbox_pintura_estufa.jpg" alt="" />
-            </GalleryItemImage>
+            </GalleryItemContent>
         </GalleryItemStyle>
     );
 };

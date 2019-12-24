@@ -28,9 +28,13 @@ const ResetStyle = css`
         display: none;
     }
 
+    html, body {
+        overflow-x: hidden;
+    }
+    
     body {
         line-height: 1;
-        overflow-x: hidden;
+        position: relative;
     }
 
     ol, ul {

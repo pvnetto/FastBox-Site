@@ -7,16 +7,20 @@ import Section from '../../layout/Section';
 import ParallaxContainer from '../../layout/ParallaxContainer';
 
 import Modal from './modal/Modal';
+import { device } from '../../helpers/queries';
 
 const GalleryContent = style.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
-    margin: 0 -1rem;
-
     width: 100%;
+
+    @media ${device.tablet} {
+        flex-direction: row;
+    }
 `
 
 const Gallery = () => {
