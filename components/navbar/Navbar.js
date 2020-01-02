@@ -82,25 +82,13 @@ const Navbar = () => {
 
                 <Content>
                     <NavContent>
-                        <a href="/">
-                            <NavLogo src="./images/logo-hires.png" alt="" />
-                        </a>
+                        <a href="/"><NavLogo src="./images/logo-hires.png" alt="" /></a>
                         <NavList>
-                            <li>
-                                <NavLink href="#inicio">Início</NavLink>
-                            </li>
-                            <li>
-                                <NavLink href="#sobre">Sobre</NavLink>
-                            </li>
-                            <li>
-                                <NavLink href="#servicos">Serviços</NavLink>
-                            </li>
-                            <li>
-                                <NavLink href="#galeria">Galeria</NavLink>
-                            </li>
-                            <li>
-                                <NavLink href="#contato">Contato</NavLink>
-                            </li>
+                            <li><NavLink href="#inicio">Início</NavLink></li>
+                            <li><NavLink href="#sobre">Sobre</NavLink></li>
+                            <li><NavLink href="#servicos">Serviços</NavLink></li>
+                            <li><NavLink href="#galeria">Galeria</NavLink></li>
+                            <li><NavLink href="#contato">Contato</NavLink></li>
                         </NavList>
                     </NavContent>
                 </Content>

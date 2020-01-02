@@ -5,6 +5,14 @@ import Colors from '../helpers/colors';
 import { device } from '../helpers/queries';
 
 const MobileNavStyle = style.div`
+    display: block;
+
+    @media ${device.laptop} {
+        display: none;
+    }
+`
+
+const MobileNavMenu = style.div`
     position: fixed;
     top: 0;
     right: 0;
@@ -24,8 +32,20 @@ const MobileNavStyle = style.div`
 
     background: ${Colors.BLUE};
 
-    @media ${device.laptop} {
-        display: none;
+    a {
+        font-size: 1.5rem;
+    }
+`
+
+const MobileNavLogo = style.a`
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    transform: translateX(20px) translateY(27px);
+
+    img {
+        width: 120px;
     }
 `
 
@@ -60,10 +80,6 @@ const MobileNavIcon = style.div`
     div:nth-child(3) {
         transform: ${props => props.close ? 'translateY(-200%) rotate(-45deg)' : ''};
     }
-
-    @media ${device.laptop} {
-        display: none;
-    }
 `
 
 const MobileNavButtons = style.div`
@@ -88,13 +104,14 @@ const MobileNavbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
     return (
-        <>
+        <MobileNavStyle>
+            <MobileNavLogo href="/"><img src="./images/logo-hires.png" alt="" /></MobileNavLogo>
             <MobileNavIcon close={isMenuOpen} onClick={() => setMenuOpen(!isMenuOpen)}>
                 <div></div>
                 <div></div>
                 <div></div>
             </MobileNavIcon>
-            <MobileNavStyle active={isMenuOpen}>
+            <MobileNavMenu active={isMenuOpen}>
                 <MobileNavButtons>
                     <a onClick={() => setMenuOpen(false)} href="#inicio">Início</a>
                     <a onClick={() => setMenuOpen(false)} href="#sobre">Sobre</a>
@@ -102,8 +119,8 @@ const MobileNavbar = () => {
                     <a onClick={() => setMenuOpen(false)} href="#galeria">Galeria</a>
                     <a onClick={() => setMenuOpen(false)} href="#contato">Contato</a>
                 </MobileNavButtons>
-            </MobileNavStyle>
-        </>
+            </MobileNavMenu>
+        </MobileNavStyle>
     );
 };
 
