@@ -4,6 +4,12 @@
 
 Webpage for FastBox, a car repair shop based in Natal/RN, Brazil. Made using [React](https://github.com/facebook/react), [Next.JS](https://nextjs.org/), and [styled components](https://www.styled-components.com/).
 
+
+## Layout
+
+[Figma Draft](https://www.figma.com/file/J68CLOulfySFM7ggg02JN6Iv/FastBox).
+
+
 ## Running the project
 
 Clone the project:
